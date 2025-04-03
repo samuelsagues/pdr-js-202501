@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+</head>
+<style>
+    * {
+        font-size: 16;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .cartao{
+        border: 1px solid rgb(0, 60, 255);/*borda*/
+        width: 12rem;/*margim*/
+        height: 14rem;/*altura*/
+        border-radius: .5rem;/*faz a borda redonda*/
+        padding: 1rem;/*afasta da borda*/
+        margin: 2rem auto;/*faz a margin em cima e embaixo*/
+        box-shadow: 0.5rem 0.5rem 0.3rem 0.1rem #00fcdb;/*sombra do post*/
+        background-color: black;/* muda a cor do fundo do post*/
+        color: #00fcdb;/*muda a cor do texto*/
+        text-align: center; /*alinhar o texto no meio*/
+    }
+</style>
+<body>
+    <div class="cartao">
+    <script>
+        /*
+        * Estrutura sequencial;
+        * Comando de saidas;
+        * comando de entrada;
+        * templete string e intrepolação;
+        */
+       var produto = prompt("informe o produto:");//
+       document.write('Produto: ${produto}');//escreve o produto
+    </script>
+    </div>
+</body>
+</html>
