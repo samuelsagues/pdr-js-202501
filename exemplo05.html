@@ -14,7 +14,7 @@
         border: 1px solid rgb(0, 60, 255);/*borda*/
         width: 12rem;/*margim*/
         height: 14rem;/*altura*/
-        border-radius: .5rem;/*faz a borda redonda*/
+        border-radius: 0.5rem;/*faz a borda redonda*/
         padding: 1rem;/*afasta da borda*/
         margin: 2rem auto;/*faz a margin em cima e embaixo*/
         box-shadow: 0.5rem 0.5rem 0.3rem 0.1rem #00fcdb;/*sombra do post*/
@@ -25,18 +25,21 @@
     img{
         width: 12rem;/*margim*/
         height: 7rem;/*altura*/
+        border-radius: 0.5rem;/*faz a borda redonda*/
     }
     .tutulo{
-        font-size: 1.3rem;
-      font-weight: bold;
+      font-size: 1.3rem;/*define o tamanho da fonte de um elemento*/
+      font-weight: bold;/*tornar o texto negrito*/
+      text-align: left;/* colocar na direita*/
     }
     .descricao{
-        font-size: 0.8rem;
+        font-size: 0.8rem;/*define o tamanho da fonte de um elemento*/
+        text-align: left;/* colocar na direita*/
     }
     .preco{
-        font-size: 1.5rem;
-        font-weight: bolder;
-        text-align: right;/* colocr na esquerda*/
+        font-size: 1.5rem;/*define o tamanho da fonte de um elemento*/
+        font-weight: bolder;/*aumentar a espessura da fonte(deixa o texto mais grosso)*/
+        text-align: right;/* colocar na esquerda*/
     }
 </style>
 <body>
@@ -54,8 +57,8 @@
 
     document.write("<img src='arroz.jpeg' alt='Logo arroz'>");
        document.write(`<h1 class="titulo"> ${produto}</h1>`);//criando o nome do produto dentro do h1
-       document.write(`<article class="descrica"> ${descricao}</article>`);
-       document.write(`<aside class="descrica"> R${preco}</aside>`);
+       document.write(`<article class="descrica"> ${descricao}</article>`);//criando o nome da descricao 
+       document.write(`<aside class="descrica"> R${preco}</aside>`);//criando o nome do proco
     </script>
     </div>
 </body>
